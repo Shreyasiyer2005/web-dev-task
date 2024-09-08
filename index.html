@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Travel App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Travel App</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#destination">Destination Suggestions</a></li>
+            <li><a href="#hotelBooking">Hotel Booking</a></li>
+            <li><a href="#mapAttractions">Nearby Attractions</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="destination">
+        <h2>Get Destination Suggestions</h2>
+        <input type="text" id="destinationName" placeholder="Enter destination name">
+        <button onclick="suggestDestination()">Suggest a Destination </button>
+        <div id="destinationResult"></div>
+    </section>
+
+    <section id="hotelBooking">
+        <h2>Book a Hotel</h2>
+        <input type="text" id="hotelName" placeholder="Enter hotel name">
+        <button onclick="bookHotel()">Book Now</button>
+        <div id="bookingResult"></div>
+    </section>
+
+    <section id="mapAttractions">
+        <h2>Nearby Attractions</h2>
+        <button onclick="showAttractions()">Show Attractions</button>
+        <div id="mapContainer">
+            <iframe 
+                id="mapFrame" 
+                src="" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </div>
+    </section id="about" class="about"></section>
+        <h3>About Us</h3>
+        <p>
+          Our company is dedicated to providing the best travel experiences to
+          our customers. We specialize in creating custom itineraries that cater
+          to each individual's interests and preferences.
+        </p>
+        <div class="team-members">
+          <div class="team-member">
+            <img src="images/team-member-1.jpg" alt="" />
+            <h4>Shreyas</h4>
+            <p>Founder</p>
+          </div>
+          <div class="team-member">
+            <img src="images/team-member-2.jpg" alt="" />
+            <h4>Megha</h4>
+            <p>CEO & Head of Operations</p>
+          </div>
+          <div class="team-member">
+            <img src="images/team-member-3.jpg" alt="" />
+            <h4>Yashas</h4>
+            <p>Marketing Director</p>
+          </div> 
+          <div class="team-member">
+            <img src="images/team-member-4.jpg" alt="" />
+            <h4>Naveena</h4>
+            <p>Marketing Director</p>
+        </div>
+        <div class="team-member">
+          <img src="images/team-member-5.jpg" alt="" />
+          <h4>Nayana</h4>
+          <p>Marketing Director</p>
+        </div>
+        <div class="team-member">
+          <img src="images/team-member-6.jpg" alt="" />
+          <h4>Preethi</h4>
+          <p>Marketing Director</p>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
